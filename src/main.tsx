@@ -80,7 +80,7 @@ function PageShell({ current, children }: { current: PageKey; children: ReactNod
           ))}
         </nav>
       </header>
-      <main>{children}</main>
+      <main className={`page page-${current}`}>{children}</main>
       <footer>
         <span>© {new Date().getFullYear()} Trevor Faske</span>
         <span>Ecology · Evolution · Conservation</span>
