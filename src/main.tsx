@@ -2,15 +2,15 @@ import { StrictMode, type ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
-type PageKey = "home" | "research" | "publications" | "teaching" | "about" | "cv";
+type PageKey = "home" | "research" | "publications" | "teaching" | "about";
 
-const navItems: { key: PageKey; label: string; href: string }[] = [
+const navItems: { key: PageKey | "cv"; label: string; href: string }[] = [
   { key: "home", label: "Home", href: "/" },
   { key: "research", label: "Research", href: "/research/" },
   { key: "publications", label: "Publications", href: "/publications/" },
   { key: "teaching", label: "Teaching", href: "/teaching/" },
   { key: "about", label: "About me", href: "/about/" },
-  { key: "cv", label: "CV", href: "/cv/" },
+  { key: "cv", label: "CV", href: "/Trevor-Faske-CV.pdf" },
 ];
 
 const publications = [
@@ -225,57 +225,10 @@ function AboutPage() {
   );
 }
 
-function CvPage() {
-  return (
-    <PageShell current="cv">
-      <PageIntro number="05" label="Curriculum vitae" title={<>Academic work, <em>at a glance.</em></>} lead="Positions, education, publications, funding, technical skills, teaching, service, and presentations." />
-      <section className="cv-overview">
-        <div className="cv-actions">
-          <p className="section-number">Full CV</p>
-          <h2>Trevor M. Faske</h2>
-          <p>Evolutionary ecologist and research scientist working across landscape genomics, native plant materials, and conservation.</p>
-          <div>
-            <a className="button" href="/Trevor-Faske-CV.pdf" target="_blank" rel="noreferrer">View full CV <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="/Trevor-Faske-CV.pdf" download>Download PDF ↓</a>
-          </div>
-        </div>
-        <div className="cv-details">
-          <section>
-            <p className="section-number">Current positions</p>
-            <article><span>2025–present</span><div><h3>Research Scientist & Co-founder</h3><p>Landscape Stewardship Collective · Flagstaff, Arizona</p></div></article>
-            <article><span>2025–present</span><div><h3>Postdoctoral Fellow</h3><p>University of Montana · Missoula, Montana</p></div></article>
-          </section>
-          <section>
-            <p className="section-number">Education</p>
-            <article><span>2023</span><div><h3>Ph.D., Ecology, Evolution, and Conservation Biology</h3><p>University of Nevada, Reno</p></div></article>
-            <article><span>2017</span><div><h3>M.S., Biology</h3><p>Virginia Commonwealth University</p></div></article>
-            <article><span>2014</span><div><h3>B.S., Bioinformatics / Mathematics</h3><p>Virginia Commonwealth University</p></div></article>
-          </section>
-          <section className="cv-stats">
-            <div><strong>18</strong><span>Peer-reviewed publications</span></div>
-            <div><strong>21</strong><span>Presented talks</span></div>
-            <div><strong>2</strong><span>Major active grants as PI</span></div>
-          </section>
-          <section>
-            <p className="section-number">Technical focus</p>
-            <ul className="skill-list">
-              <li>R and statistical modeling</li>
-              <li>Population and landscape genomics</li>
-              <li>High-performance computing</li>
-              <li>Python and reproducible data science</li>
-              <li>Spatial and climate data</li>
-              <li>Genomic data processing</li>
-            </ul>
-          </section>
-        </div>
-      </section>
-    </PageShell>
-  );
-}
-
 function getCurrentPage(): PageKey {
   const section = window.location.pathname.split("/").filter(Boolean)[0];
-  return navItems.some((item) => item.key === section) ? section as PageKey : "home";
+  const pageKeys: PageKey[] = ["home", "research", "publications", "teaching", "about"];
+  return pageKeys.includes(section as PageKey) ? section as PageKey : "home";
 }
 
 const pages: Record<PageKey, ReactNode> = {
@@ -284,7 +237,6 @@ const pages: Record<PageKey, ReactNode> = {
   publications: <PublicationsPage />,
   teaching: <TeachingPage />,
   about: <AboutPage />,
-  cv: <CvPage />,
 };
 
 createRoot(document.getElementById("root")!).render(<StrictMode>{pages[getCurrentPage()]}</StrictMode>);
