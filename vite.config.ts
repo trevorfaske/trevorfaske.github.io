@@ -10,7 +10,6 @@ export default defineConfig({
         publications: resolve(__dirname, "publications/index.html"),
         teaching: resolve(__dirname, "teaching/index.html"),
         about: resolve(__dirname, "about/index.html"),
-        cv: resolve(__dirname, "cv/index.html"),
       },
     },
   },
