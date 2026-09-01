@@ -57,14 +57,13 @@ p { line-height:1.65; }
 .feature-band>p:last-child { color:#bdcbbf; max-width:620px; margin-top:3rem; margin-right:calc((100% - min(1296px,90vw)) / 2); }
 .publication-section { padding:7rem 5vw 8rem; max-width:1440px; margin:auto; }
 .section-heading { display:flex; align-items:center; justify-content:space-between; gap:2rem; margin-bottom:3rem; }
-.publication-list { margin-bottom:3rem; }
-.publication { position:relative; display:grid; grid-template-columns:150px minmax(0,1.2fr) minmax(220px,.8fr) 30px; gap:2rem; align-items:start; padding:2.2rem 0; border-top:1px solid var(--line); color:inherit; text-decoration:none; }
+.publication-group+.publication-group { margin-top:7rem; }
+.publication-group-title { font-size:clamp(2.7rem,5vw,5rem); margin-bottom:3rem; }
+.publication { position:relative; display:grid; grid-template-columns:210px minmax(0,1.2fr) minmax(220px,.8fr); gap:2rem; align-items:start; padding:2.2rem 0; border-top:1px solid var(--line); color:inherit; text-decoration:none; }
 .publication:last-child { border-bottom:1px solid var(--line); }
-.publication:hover h2 { color:var(--orange); }
-.pub-meta { display:flex; gap:1rem; }
-.publication h2 { font-size:1.35rem; letter-spacing:-.025em; line-height:1.25; }
+.pub-meta { display:flex; flex-wrap:wrap; gap:.45rem 1rem; }
+.publication h3 { margin:0; font-size:1.2rem; letter-spacing:-.025em; line-height:1.35; }
 .publication p { margin:0; color:#647067; font-size:.78rem; line-height:1.6; }
-.pub-arrow { text-align:right; }
 .course-list { max-width:1296px; margin:auto; padding:7rem 5vw; }
 .course-list article { display:grid; grid-template-columns:150px minmax(0,1fr); gap:3rem; padding:2.5rem 0; border-top:1px solid var(--line); }
 .course-list article:last-child { border-bottom:1px solid var(--line); }

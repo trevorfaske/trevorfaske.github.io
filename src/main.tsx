@@ -13,32 +13,34 @@ const navItems: { key: PageKey | "cv"; label: string; href: string }[] = [
   { key: "cv", label: "CV", href: "/Trevor-Faske-CV.pdf" },
 ];
 
-const publications = [
-  {
-    year: "2025",
-    journal: "PNAS",
-    title: "Suturing fragmented landscapes: Mosaic hybrid zones in plants may facilitate ecosystem resiliency",
-    authors: "Massatti R*, Faske TM*, Barnes IM, Leger EA, Parchman TL, Richardson BA, Knowles LL",
-    href: "https://doi.org/10.1073/pnas.2410941122",
-  },
-  {
-    year: "2025",
-    journal: "Molecular Ecology",
-    title: "Geography and environment shape spatial genetic variation and predict climate maladaptation across isolated populations of Pinus muricata",
-    authors: "Galland LM, Faske TM, Osuna-Mascaró C, Dilts TE, Bisbing S, Parchman TL",
-  },
-  {
-    year: "2023",
-    journal: "Evolution",
-    title: "Environment predicts the maintenance of reproductive isolation in a mosaic hybrid zone of rubber rabbitbrush",
-    authors: "Faske TM, Agneray AC, Jahner JP, Osuna-Mascaró C, Sheta LM, Richardson BA, Leger EA, Parchman TL",
-  },
-  {
-    year: "2021",
-    journal: "Evolutionary Applications",
-    title: "Genomic and common garden approaches yield complementary results for quantifying environmental drivers of local adaptation in rubber rabbitbrush",
-    authors: "Faske TM, Agneray AC, Jahner JP, Sheta LM, Leger EA, Parchman TL",
-  },
+const manuscriptsInReview = [
+  { number: "6", status: "In review", journal: "Molecular Ecology", title: "Polyploidy and environmental adaptation structures divergence and limited gene flow among sympatric subspecies of big sagebrush (Artemisia tridentata)", authors: "Faske TM, Agneray AC, Osuna-Mascaró C, Jahner JP, Richardson BA, Leger EA, Parchman TL" },
+  { number: "5", status: "In review", journal: "Ecological Applications", title: "The genetic consequences of mixing seed collections and species-specific biology on the development of seed sources for land management", authors: "Faske TM, Lasché S, Wolf A, Faist AM, Fuentes-Soriano S, Winkler DE, Massatti R" },
+  { number: "4", status: "In review", journal: "Conservation Genetics", title: "Population structure and genetic connectivity in the endangered Pectis imberbis: Addressing conservation and genetic gaps in the Arizona Sky Islands", authors: "Gilb S‡, Haubensak K, Aslan C, Holeski L, Faske T, Souther S" },
+  { number: "3", status: "In revision", journal: "Restoration Ecology", title: "A matter of germination: The importance of seed-sourcing for seed-based restoration of dry grasslands", authors: "Lasché SN, Winkler DE, Schroeder RWR, Wolf AC, Massatti R, Fuentes-Soriano S, Faske TM, Faist AM" },
+  { number: "2", status: "In review", journal: "Conservation Science and Practice", title: "Introduction using vegetative propagules maintains genetic diversity and increases population redundancy in a critically endangered grass, Pleuropogon oregonus", authors: "Massatti R, Bainbridge S, Copeland SM, Crouch C, Faske TM, Hamerlynck E, Palmer B, Roybal C" },
+  { number: "1", status: "In preparation", journal: "", title: "From theory to practice: Uses and misuses of genotype-environment associations to inform restoration and conservation", authors: "Faske TM, LoPiccolo KR‡, Massatti R" },
+];
+
+const publishedPublications = [
+  { number: "18", year: "2025", journal: "Proceedings of the National Academy of Sciences", title: "Suturing fragmented landscapes: Mosaic hybrid zones in plants may facilitate ecosystem resiliency", authors: "Massatti R*, Faske TM*, Barnes IM, Leger EA, Parchman TL, Richardson BA, Knowles LL" },
+  { number: "17", year: "2025", journal: "Phytochemistry Letters", title: "Leveraging phytochemical variation in Piper scintillans Trel. to discover novel flavanone meroterpenes", authors: "Philbin CS, Burroughs M, Richards LA, Faske TM, Dyer LA, Parchman TL, Jeffrey CS" },
+  { number: "16", year: "2025", journal: "Molecular Ecology", title: "Geography and environment shape spatial genetic variation and predict climate maladaptation across isolated and disjunct populations of Pinus muricata", authors: "Galland LM, Faske TM, Osuna-Mascaró C, Dilts TE, Bisbing S, Parchman TL" },
+  { number: "15", year: "2025", journal: "Molecular Ecology", title: "Genomics-driven monitoring of Fraxinus latifolia (Oregon ash) for genetic conservation and EAB-resistance breeding", authors: "Melton AE, Faske TM, Parchman TL, Hamilton JA" },
+  { number: "14", year: "2024", journal: "Ecology Letters", title: "Response to von Schmalensee et al.", authors: "Garcia-Costoya G, Williams CE, Faske TM, Moorman JD, Logan ML" },
+  { number: "13", year: "2023", journal: "Evolution", title: "Environment predicts the maintenance of reproductive isolation in a mosaic hybrid zone of rubber rabbitbrush", authors: "Faske TM, Agneray AC, Jahner JP, Osuna-Mascaró C, Sheta LM‡, Richardson BA, Leger EA, Parchman TL" },
+  { number: "12", year: "2023", journal: "Ecology Letters", title: "Evolutionary constraints mediate extinction risk under climate change", authors: "Garcia-Costoya G, Williams CE, Faske TM, Moorman JD, Logan ML" },
+  { number: "11", year: "2023", journal: "Ecology Letters", title: "The gut microbiome reflects ancestry despite dietary shifts across a hybrid zone", authors: "Nielsen DP, Harrison JG, Byer NW, Faske TM, Parchman TL, Simison WB, Matocq MD" },
+  { number: "10", year: "2022", journal: "Tree Genetics & Genomes", title: "Divergence amid recurring gene flow: Complex demographic histories for two North American pine species (Pinus pungens and P. rigida) fit growing expectations among forest trees", authors: "Bolte CE, Faske TM, Friedline CJ, Eckert AJ" },
+  { number: "9", year: "2022", journal: "Conservation Genetics", title: "Population genomics of Monadenia land snails reveals structuring but gene flow across distinct species and morphotypes", authors: "Oswald JA, Roth B, Faske TM, Allen JM, Mestre C, Rivers-Pankratz D, Van Norman K, Guralnick RP" },
+  { number: "8", year: "2021", journal: "Evolutionary Applications", title: "Genomic and common garden approaches yield complementary results for quantifying environmental drivers of local adaptation in rubber rabbitbrush, a foundational Great Basin shrub", authors: "Faske TM, Agneray AC, Jahner JP, Sheta LM‡, Leger EA, Parchman TL" },
+  { number: "7", year: "2019", journal: "Molecular Ecology", title: "Evolutionary genomics of gypsy moth populations sampled along a latitudinal gradient", authors: "Friedline CJ, Faske TM, Lind BM, Hobson EM, Parry D, Dyer RJ, Johnson DM, Thompson LM, Grayson KL, Eckert AJ" },
+  { number: "6", year: "2019", journal: "Biological Invasions", title: "Can gypsy moth stand the heat? A reciprocal transplant experiment with an invasive forest pest across its southern range margin", authors: "Faske TM, Thompson LM, Banahene N‡, Levorse A‡, Quiroga Herrera M‡, Sherman K‡, Timko SE‡, Yang B‡, Gray DR, Parry D, Tobin PC, Eckert AJ, Johnson DM, Grayson KL" },
+  { number: "5", year: "2018", journal: "Journal of Insect Science", title: "Geographic variation in larval metabolic rate between northern and southern populations of the invasive gypsy moth", authors: "May C‡*, Hillerbrand N‡*, Thompson LM, Faske TM, Martinez E, Parry D, Agosta SJ, Grayson KL" },
+  { number: "4", year: "2018", journal: "Environmental Entomology", title: "Thermal sensitivity of gypsy moth during larval and pupal development", authors: "Banahene N‡*, Salem SK‡*, Faske TM, Byrne HM‡, Glackin M‡, Agosta SJ, Eckert AJ, Grayson KL, Thompson LM" },
+  { number: "3", year: "2018", journal: "Tree Genetics & Genomes", title: "The genomics of local adaptation in trees: Are we out of the woods yet?", authors: "Lind BM, Menon M, Bolte CE, Faske TM, Eckert AJ" },
+  { number: "2", year: "2017", journal: "Physiological Entomology", title: "Variation in growth and developmental responses to supraoptimal temperatures near latitudinal range limits of gypsy moth Lymantria dispar, an expanding invasive species", authors: "Thompson LM, Faske TM, Banahene N‡, Grim D, Agosta SJ, Parry D, Tobin PC, Johnson DM, Grayson KL" },
+  { number: "1", year: "2015", journal: "Environmental Entomology", title: "Performance of wild and laboratory-reared gypsy moth: A comparison between foliage and artificial diet", authors: "Grayson KL, Parry D, Faske TM, Hamilton A, Tobin PC, Agosta SJ, Johnson DM" },
 ];
 
 const researchAreas = [
@@ -155,19 +157,32 @@ function ResearchPage() {
 function PublicationsPage() {
   return (
     <PageShell current="publications">
-      <PageIntro number="02" label="Publications" title={<>Research in <em>print.</em></>} lead="Selected peer-reviewed work on landscape genomics, local adaptation, hybrid zones, and the evolutionary ecology of western plant populations." />
+      <PageIntro number="02" label="Publications" title={<>Publications</>} lead="* Authors contributed equally. ‡ Undergraduate or graduate mentee." />
       <section className="publication-section">
-        <div className="section-heading">
-          <p className="section-number">Selected publications</p>
-          <a className="text-link" href="https://scholar.google.com/scholar?q=Trevor+M.+Faske">Google Scholar ↗</a>
+        <div className="publication-group">
+          <h2 className="publication-group-title">Manuscripts in review</h2>
+          <div className="publication-list">
+            {manuscriptsInReview.map((publication) => (
+              <article className="publication" key={publication.number}>
+                <div className="pub-meta"><span>{publication.number}</span><span>{publication.status}</span>{publication.journal && <span>{publication.journal}</span>}</div>
+                <h3>{publication.title}</h3>
+                <p>{publication.authors}</p>
+              </article>
+            ))}
+          </div>
         </div>
-        <div className="publication-list">
-          {publications.map((publication) => {
-            const content = <><div className="pub-meta"><span>{publication.year}</span><span>{publication.journal}</span></div><h2>{publication.title}</h2><p>{publication.authors}</p><span className="pub-arrow" aria-hidden="true">↗</span></>;
-            return publication.href ? <a className="publication" href={publication.href} key={publication.title}>{content}</a> : <article className="publication" key={publication.title}>{content}</article>;
-          })}
+        <div className="publication-group">
+          <h2 className="publication-group-title">Published</h2>
+          <div className="publication-list">
+            {publishedPublications.map((publication) => (
+              <article className="publication" key={publication.number}>
+                <div className="pub-meta"><span>{publication.number}</span><span>{publication.year}</span><span>{publication.journal}</span></div>
+                <h3>{publication.title}</h3>
+                <p>{publication.authors}</p>
+              </article>
+            ))}
+          </div>
         </div>
-        <a className="button" href="/Trevor-Faske-CV.pdf">Download full CV <span aria-hidden="true">↓</span></a>
       </section>
     </PageShell>
   );
