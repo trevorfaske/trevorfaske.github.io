@@ -23,25 +23,31 @@ const manuscriptsInReview = [
 ];
 
 const publishedPublications = [
-  { number: "18", year: "2025", journal: "Proceedings of the National Academy of Sciences", title: "Suturing fragmented landscapes: Mosaic hybrid zones in plants may facilitate ecosystem resiliency", authors: "Massatti R*, Faske TM*, Barnes IM, Leger EA, Parchman TL, Richardson BA, Knowles LL" },
-  { number: "17", year: "2025", journal: "Phytochemistry Letters", title: "Leveraging phytochemical variation in Piper scintillans Trel. to discover novel flavanone meroterpenes", authors: "Philbin CS, Burroughs M, Richards LA, Faske TM, Dyer LA, Parchman TL, Jeffrey CS" },
-  { number: "16", year: "2025", journal: "Molecular Ecology", title: "Geography and environment shape spatial genetic variation and predict climate maladaptation across isolated and disjunct populations of Pinus muricata", authors: "Galland LM, Faske TM, Osuna-Mascaró C, Dilts TE, Bisbing S, Parchman TL" },
-  { number: "15", year: "2025", journal: "Molecular Ecology", title: "Genomics-driven monitoring of Fraxinus latifolia (Oregon ash) for genetic conservation and EAB-resistance breeding", authors: "Melton AE, Faske TM, Parchman TL, Hamilton JA" },
-  { number: "14", year: "2024", journal: "Ecology Letters", title: "Response to von Schmalensee et al.", authors: "Garcia-Costoya G, Williams CE, Faske TM, Moorman JD, Logan ML" },
-  { number: "13", year: "2023", journal: "Evolution", title: "Environment predicts the maintenance of reproductive isolation in a mosaic hybrid zone of rubber rabbitbrush", authors: "Faske TM, Agneray AC, Jahner JP, Osuna-Mascaró C, Sheta LM‡, Richardson BA, Leger EA, Parchman TL" },
-  { number: "12", year: "2023", journal: "Ecology Letters", title: "Evolutionary constraints mediate extinction risk under climate change", authors: "Garcia-Costoya G, Williams CE, Faske TM, Moorman JD, Logan ML" },
-  { number: "11", year: "2023", journal: "Ecology Letters", title: "The gut microbiome reflects ancestry despite dietary shifts across a hybrid zone", authors: "Nielsen DP, Harrison JG, Byer NW, Faske TM, Parchman TL, Simison WB, Matocq MD" },
-  { number: "10", year: "2022", journal: "Tree Genetics & Genomes", title: "Divergence amid recurring gene flow: Complex demographic histories for two North American pine species (Pinus pungens and P. rigida) fit growing expectations among forest trees", authors: "Bolte CE, Faske TM, Friedline CJ, Eckert AJ" },
-  { number: "9", year: "2022", journal: "Conservation Genetics", title: "Population genomics of Monadenia land snails reveals structuring but gene flow across distinct species and morphotypes", authors: "Oswald JA, Roth B, Faske TM, Allen JM, Mestre C, Rivers-Pankratz D, Van Norman K, Guralnick RP" },
-  { number: "8", year: "2021", journal: "Evolutionary Applications", title: "Genomic and common garden approaches yield complementary results for quantifying environmental drivers of local adaptation in rubber rabbitbrush, a foundational Great Basin shrub", authors: "Faske TM, Agneray AC, Jahner JP, Sheta LM‡, Leger EA, Parchman TL" },
-  { number: "7", year: "2019", journal: "Molecular Ecology", title: "Evolutionary genomics of gypsy moth populations sampled along a latitudinal gradient", authors: "Friedline CJ, Faske TM, Lind BM, Hobson EM, Parry D, Dyer RJ, Johnson DM, Thompson LM, Grayson KL, Eckert AJ" },
-  { number: "6", year: "2019", journal: "Biological Invasions", title: "Can gypsy moth stand the heat? A reciprocal transplant experiment with an invasive forest pest across its southern range margin", authors: "Faske TM, Thompson LM, Banahene N‡, Levorse A‡, Quiroga Herrera M‡, Sherman K‡, Timko SE‡, Yang B‡, Gray DR, Parry D, Tobin PC, Eckert AJ, Johnson DM, Grayson KL" },
-  { number: "5", year: "2018", journal: "Journal of Insect Science", title: "Geographic variation in larval metabolic rate between northern and southern populations of the invasive gypsy moth", authors: "May C‡*, Hillerbrand N‡*, Thompson LM, Faske TM, Martinez E, Parry D, Agosta SJ, Grayson KL" },
-  { number: "4", year: "2018", journal: "Environmental Entomology", title: "Thermal sensitivity of gypsy moth during larval and pupal development", authors: "Banahene N‡*, Salem SK‡*, Faske TM, Byrne HM‡, Glackin M‡, Agosta SJ, Eckert AJ, Grayson KL, Thompson LM" },
-  { number: "3", year: "2018", journal: "Tree Genetics & Genomes", title: "The genomics of local adaptation in trees: Are we out of the woods yet?", authors: "Lind BM, Menon M, Bolte CE, Faske TM, Eckert AJ" },
-  { number: "2", year: "2017", journal: "Physiological Entomology", title: "Variation in growth and developmental responses to supraoptimal temperatures near latitudinal range limits of gypsy moth Lymantria dispar, an expanding invasive species", authors: "Thompson LM, Faske TM, Banahene N‡, Grim D, Agosta SJ, Parry D, Tobin PC, Johnson DM, Grayson KL" },
-  { number: "1", year: "2015", journal: "Environmental Entomology", title: "Performance of wild and laboratory-reared gypsy moth: A comparison between foliage and artificial diet", authors: "Grayson KL, Parry D, Faske TM, Hamilton A, Tobin PC, Agosta SJ, Johnson DM" },
+  { number: "18", year: "2025", journal: "Proceedings of the National Academy of Sciences", details: "122(31), e2410941122", doi: "https://doi.org/10.1073/pnas.2410941122", title: "Suturing fragmented landscapes: Mosaic hybrid zones in plants may facilitate ecosystem resiliency", authors: "Massatti R*, Faske TM*, Barnes IM, Leger EA, Parchman TL, Richardson BA, Knowles LL" },
+  { number: "17", year: "2025", journal: "Phytochemistry Letters", details: "69, 103134", doi: "https://doi.org/10.1016/j.phytol.2025.103134", title: "Leveraging phytochemical variation in Piper scintillans Trel. to discover novel flavanone meroterpenes", authors: "Philbin CS, Burroughs M, Richards LA, Faske TM, Dyer LA, Parchman TL, Jeffrey CS" },
+  { number: "16", year: "2025", journal: "Molecular Ecology", details: "e17638", doi: "https://doi.org/10.1111/mec.17638", title: "Geography and environment shape spatial genetic variation and predict climate maladaptation across isolated and disjunct populations of Pinus muricata", authors: "Galland LM, Faske TM, Osuna-Mascaró C, Dilts TE, Bisbing S, Parchman TL" },
+  { number: "15", year: "2025", journal: "Molecular Ecology", details: "e17640", doi: "https://doi.org/10.1111/mec.17640", title: "Genomics-driven monitoring of Fraxinus latifolia (Oregon ash) for genetic conservation and EAB-resistance breeding", authors: "Melton AE, Faske TM, Parchman TL, Hamilton JA" },
+  { number: "14", year: "2024", journal: "Ecology Letters", details: "27(6), e14436", doi: "https://doi.org/10.1111/ele.14436", title: "Response to von Schmalensee et al.", authors: "Garcia-Costoya G, Williams CE, Faske TM, Moorman JD, Logan ML" },
+  { number: "13", year: "2023", journal: "Evolution", details: "qpad207", doi: "https://doi.org/10.1093/evolut/qpad207", title: "Environment predicts the maintenance of reproductive isolation in a mosaic hybrid zone of rubber rabbitbrush", authors: "Faske TM, Agneray AC, Jahner JP, Osuna-Mascaró C, Sheta LM‡, Richardson BA, Leger EA, Parchman TL" },
+  { number: "12", year: "2023", journal: "Ecology Letters", details: "26(4), 529–539", doi: "https://doi.org/10.1111/ele.14173", title: "Evolutionary constraints mediate extinction risk under climate change", authors: "Garcia-Costoya G, Williams CE, Faske TM, Moorman JD, Logan ML" },
+  { number: "11", year: "2023", journal: "Ecology Letters", details: "26(1), 63–75", doi: "https://doi.org/10.1111/ele.14135", title: "The gut microbiome reflects ancestry despite dietary shifts across a hybrid zone", authors: "Nielsen DP, Harrison JG, Byer NW, Faske TM, Parchman TL, Simison WB, Matocq MD" },
+  { number: "10", year: "2022", journal: "Tree Genetics & Genomes", details: "18(5), 35", doi: "https://doi.org/10.1007/s11295-022-01565-8", title: "Divergence amid recurring gene flow: Complex demographic histories for two North American pine species (Pinus pungens and P. rigida) fit growing expectations among forest trees", authors: "Bolte CE, Faske TM, Friedline CJ, Eckert AJ" },
+  { number: "9", year: "2022", journal: "Conservation Genetics", details: "23(2), 299–311", doi: "https://doi.org/10.1007/s10592-021-01410-w", title: "Population genomics of Monadenia land snails reveals structuring but gene flow across distinct species and morphotypes", authors: "Oswald JA, Roth B, Faske TM, Allen JM, Mestre C, Rivers-Pankratz D, Van Norman K, Guralnick RP" },
+  { number: "8", year: "2021", journal: "Evolutionary Applications", details: "14(12), 2881–2900", doi: "https://doi.org/10.1111/eva.13323", title: "Genomic and common garden approaches yield complementary results for quantifying environmental drivers of local adaptation in rubber rabbitbrush, a foundational Great Basin shrub", authors: "Faske TM, Agneray AC, Jahner JP, Sheta LM‡, Leger EA, Parchman TL" },
+  { number: "7", year: "2019", journal: "Molecular Ecology", details: "28(9), 2206–2223", doi: "https://doi.org/10.1111/mec.15069", title: "Evolutionary genomics of gypsy moth populations sampled along a latitudinal gradient", authors: "Friedline CJ, Faske TM, Lind BM, Hobson EM, Parry D, Dyer RJ, Johnson DM, Thompson LM, Grayson KL, Eckert AJ" },
+  { number: "6", year: "2019", journal: "Biological Invasions", details: "21(4), 1365–1378", doi: "https://doi.org/10.1007/s10530-018-1907-9", title: "Can gypsy moth stand the heat? A reciprocal transplant experiment with an invasive forest pest across its southern range margin", authors: "Faske TM, Thompson LM, Banahene N‡, Levorse A‡, Quiroga Herrera M‡, Sherman K‡, Timko SE‡, Yang B‡, Gray DR, Parry D, Tobin PC, Eckert AJ, Johnson DM, Grayson KL" },
+  { number: "5", year: "2018", journal: "Journal of Insect Science", details: "18(4), 1–7", doi: "https://doi.org/10.1093/jisesa/iey068", title: "Geographic variation in larval metabolic rate between northern and southern populations of the invasive gypsy moth", authors: "May C‡*, Hillerbrand N‡*, Thompson LM, Faske TM, Martinez E, Parry D, Agosta SJ, Grayson KL" },
+  { number: "4", year: "2018", journal: "Environmental Entomology", details: "47(6), 1623–1631", doi: "https://doi.org/10.1093/ee/nvy149", title: "Thermal sensitivity of gypsy moth during larval and pupal development", authors: "Banahene N‡*, Salem SK‡*, Faske TM, Byrne HM‡, Glackin M‡, Agosta SJ, Eckert AJ, Grayson KL, Thompson LM" },
+  { number: "3", year: "2018", journal: "Tree Genetics & Genomes", details: "14(2), 29", doi: "https://doi.org/10.1007/s11295-017-1224-y", title: "The genomics of local adaptation in trees: Are we out of the woods yet?", authors: "Lind BM, Menon M, Bolte CE, Faske TM, Eckert AJ" },
+  { number: "2", year: "2017", journal: "Physiological Entomology", details: "42(2), 181–190", doi: "https://doi.org/10.1111/phen.12190", award: "Royal Entomological Society: Best paper 2017/2018", title: "Variation in growth and developmental responses to supraoptimal temperatures near latitudinal range limits of gypsy moth Lymantria dispar, an expanding invasive species", authors: "Thompson LM, Faske TM, Banahene N‡, Grim D, Agosta SJ, Parry D, Tobin PC, Johnson DM, Grayson KL" },
+  { number: "1", year: "2015", journal: "Environmental Entomology", details: "44(3), 864–873", doi: "https://doi.org/10.1093/ee/nvv063", title: "Performance of wild and laboratory-reared gypsy moth: A comparison between foliage and artificial diet", authors: "Grayson KL, Parry D, Faske TM, Hamilton A, Tobin PC, Agosta SJ, Johnson DM" },
 ];
+
+function formatAuthors(authors: string) {
+  return authors.split(/(Faske T(?:M)?\*?)/g).map((part, index) =>
+    /^Faske T(?:M)?\*?$/.test(part) ? <strong key={index}>{part}</strong> : part
+  );
+}
 
 const researchAreas = [
   {
@@ -161,27 +167,23 @@ function PublicationsPage() {
       <section className="publication-section">
         <div className="publication-group">
           <h2 className="publication-group-title">Manuscripts in review</h2>
-          <div className="publication-list">
+          <ol className="citation-list" reversed start={6}>
             {manuscriptsInReview.map((publication) => (
-              <article className="publication" key={publication.number}>
-                <div className="pub-meta"><span>{publication.number}</span><span>{publication.status}</span>{publication.journal && <span>{publication.journal}</span>}</div>
-                <h3>{publication.title}</h3>
-                <p>{publication.authors}</p>
-              </article>
+              <li value={Number(publication.number)} key={publication.number}>
+                {formatAuthors(publication.authors)} <em>({publication.status})</em> {publication.title}.{publication.journal && <> <cite>{publication.journal}</cite></>}
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
         <div className="publication-group">
           <h2 className="publication-group-title">Published</h2>
-          <div className="publication-list">
+          <ol className="citation-list" reversed start={18}>
             {publishedPublications.map((publication) => (
-              <article className="publication" key={publication.number}>
-                <div className="pub-meta"><span>{publication.number}</span><span>{publication.year}</span><span>{publication.journal}</span></div>
-                <h3>{publication.title}</h3>
-                <p>{publication.authors}</p>
-              </article>
+              <li value={Number(publication.number)} key={publication.number}>
+                {formatAuthors(publication.authors)} ({publication.year}) {publication.title}. <cite>{publication.journal}</cite>, {publication.details}. <a href={publication.doi}>DOI</a>{publication.award && <> <strong className="citation-award">*{publication.award}</strong></>}
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
     </PageShell>
